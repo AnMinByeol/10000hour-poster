@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- html 버전 선언 -->
+<html lang="en">
+<!-- html 언어 설정 -->
+<head>
+<!-- 헤드 설정 태그 -->
+    <meta charset="UTF-8">
+    <!-- 매타 데이터 설정, 문자셋을 UTF-8로 한다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타 데이터 설정 너비를 웹페이지를 보고있는 장치와 동일하게 한다. 웹 사이트의 배율은
+    100%로 설정한다. -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- 문서와 외부 소스 사이의 관계를 정의할 때 사용, 현재 문서와 외부 리소스 사이의 연관 관계를 명시,
+    홈페이지 타이틀 옆에 붙는 조그만 아이콘을 정한다. 파비콘 파일 경로를 지정한다. -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- 문서와 외부 소스 사이의 관계를 정의할 때 사용, 스타일 시트로 연결,
+    css파일 링크가 reset.css에 있음  -->
+    <link rel="stylesheet" type="text/css" href="css/10000hours.css">
+    <!-- 문서와 외부 소스 사이의 관계를 정의할 때 사용, 스타일 시트로 연결,
+    css파일 링크가 10000hours.css에 있음  -->
+    <title>1만 시간의 법칙</title>
+    <!-- 웹 페이지의 제목을 나타낸다. -->
+</head>
+<!-- 헤드 종료를 나타내는 태그 -->
+<body>
+<!-- 문서의 몸통을 나타내는 태그 -->
+    <section id="contents">
+    <!-- 문서의 독립적인 구획을 나타낸다. -->
+        <div class="wrapper">
+        <!-- division의 약자 레이아웃을 만들때 주로 사용 단일 요소의 레이아웃을 사용할 때 사용한다. -->
+            <div class="title">
+            <!-- 레이아웃을 만들때 주로 사용, 묶어서 스타일을 지정 -->
+                <img class="clock_img" src="img/clock.png" alt="background">
+                <!-- img : 이미지를 삽입, "clock_img 스타일 clock_img 설정,
+                src : 이미지 경로 설정, 그림이 렌더링되지 않을 경우 background로 표시 -->
+                <div class="title_img">
+                <!-- div : 레이아웃을 만들때 주로 사용, class : 스타일을 지정 -->
+                    <img src="img/title.png" alt="1만 시간의 법칙">
+                    <!-- img : 이미지를 삽입, src : 이미지 경로 설정,
+                    img/title.png : 이미지 경로 alt="1만 시간의 법칙 : 이미지를 보여줄 수 없을때
+                    해당 이미지를 대체할 텍스트를 명시 -->
+                </div>
+                <!-- 레이아웃을 만들때 사용 -->
+            </div>
+            <div class="intro">
+            <!-- div : 레이아웃을 만들때 사용, class="intro" : 그룹으로 묶어서 스타일을 지정 -->
+                <div class="intro_saying">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</div>
+                <!-- div : 레이아웃을 만들때 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+                <div class="explain">
+                <!-- div : 레이아웃을 만들때 사용, class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+                        이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                    <div class="quotes">
+                    <!-- div : 레이아웃을 만들때 사용, class : div와 span 요소는
+                    보통 class 속성을 같이 사용한다.
+                    이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                        <img src="img/quotes.png" alt="따옴표">
+                        <!-- img : 이미지를 삽입, src : 이미지 경로 설정,
+                    	img/title.png : 이미지 경로 alt="따옴표" : 이미지를 보여줄 수 없을때
+                    	해당 이미지를 대체할 텍스트를 명시 -->
+                    </div>
+                    <!-- div 태그 종료 -->
+                    <p>
+                    <!-- 문단을 만든다. -->
+                        <span>1만 시간의 법칙</span>은<br>어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+                    <!-- span : 객체의 크기만큼 공간이 할당이 된다.
+                    br : 줌 바꿈을 한다. -->
+                    </p>
+                    <!-- p 태그 사용 종료 -->
+                </div>
+                <!-- div 태그 사용 종료 -->
+            </div>
+            <!-- div 태그 사용 종료 -->
+            <div class="inputs">
+            <!-- div : 레이아웃을 만들때 주로 사용 class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+            이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                <div class="field">
+                <!-- div : 레이아웃을 만들때 주로 사용, class : 스타일을 지정 -->
+                    <p>나는</p>
+                    <input id="field_value" type="text" placeholder="예)프로그래밍">
+                    <!-- input : 사용자로부터 정보를 받아들이는 용도로 사용,
+                    id : 한페이지의 한번의 정의로 고유한 하나의 태그만 사용할 수 있다,
+                    type : input 요소가 나타낼 타입을 명시,
+                    placeholder : input 요소나 textarea 요소에 안내문을 넣을 수 있다. -->
+                    <p>전문가가 될 것이다.</p>
+                    <!-- 문단을 만든다. -->
+                </div>
+                <div class="time">
+                <!-- div : 레이아웃을 만들때 주로 사용, class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+                이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                    <p>그래서 앞으로 매일 하루에</p>
+                    <div>
+                        <input id="time_value" type="number" placeholder="예)5">
+                        <!-- input id : 전체 문서에서 고유해야 하는 고유 식별자를 정의 -->
+                        <p>시간씩 훈련할 것이다.</p>
+                        <!-- p : 문단을 만들 때 쓰인다 -->
+                    </div>
+                </div>
+            </div>
+            <div class="start">
+            <!-- div와 span 요소는 보통 class 속성을 같이 사용한다.
+            이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                <div class="btn_wrap">
+                <!-- div class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+                        이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                    <button class="start_btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                    <!-- button : 클릭할 수 있는 html 요소, class : 버튼이 여러 개일 경우
+                    일괄적으로 동일한 속성을 줄 수 있다. -->
+                    <div class="click_img">
+                    <!-- div class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+                        이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                        <img src="img/click.png" alt="클릭">
+                        <!-- img : 이미지를 삽입, src : 이미지 경로 설정,
+                    	img/title.png : 이미지 경로, alt="따옴표" : 이미지를 보여줄 수 없을때
+                    	해당 이미지를 대체할 텍스트를 명시 -->
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <div class="result_loading">
+            <!-- div class : 복수의 요소에 스타일을 적용 -->
+                <div class="img_wrap">
+                <!-- div class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+                        이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용 -->
+                    <img src="img/loading.png" alt="로딩 중">
+                </div>
+            </div>
+            <div class="result">
+                <div class="result_wrap">
+                    <div>
+                        당신은<span class="field_result"></span>전문가가 되기 위해서
+                    </div>
+                    <div>
+                        대략<span class="time_result"></span>일 이상 훈련하셔야 합니다! :)
+                        <!-- span : HTML 문서에서 인라인 요소를 하나로 묶을 때 사용
+                        class : div와 span 요소는 보통 class 속성을 같이 사용한다.
+                        이 class 속성은 원하는 이름을 넣고 css에서 class 이름을 선택자로 사용한다.
+                        class 값 이름은 나중에 다시 봐도 알기 쉽고 의미에 맞게 짓는 것이 적합하다.
+                        추후 수정할 수 있기 때문이다.-->
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="go">
+                        <button class="modal_btn">훈련하러 가기 GO!GO!</button>
+                        <!-- button : 버튼 태그 사용 , class : 그룹으로 묶어서 스타일을 지정 -->
+                    </div>
+                    <div class="share">
+                    <!-- div : 레이아웃을 만들때 주로 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+                        <button class="share_btn">공유하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="modal">
+    <!-- html 문서에 포함된 독립적인 섹션을 정의할때 사용 -->
+        <div class="modal_wrap">
+        <!-- div : 레이아웃을 만들때 주로 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+            <div class="cheer">
+            <!-- div : 레이아웃을 만들때 주로 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+                <h1>화이팅!!♥♥♥</h1>
+                <!-- 가장 큰 제목을 쓴다. -->
+                <h3>당신의 꿈을 응원합니다!</h3>
+                <!-- 3번째로 큰 제목을 쓸 때 사용 -->
+            </div>
+            <div class="licat_img">
+            <!-- div : 레이아웃을 만들때 주로 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+                <img src="img/licat.png" alt="라이캣 응원">
+                <!-- img src="img/licat.png" : 이미지 소스를 지정
+                alt : "라이캣 응원" : 대체할 문자열로 라이캣 응원을 표시-->
+            </div>
+            <div class="btn">
+            <!-- div : 레이아웃을 만들때 주로 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+                <button class="close_btn">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+                <!-- button : 버튼 태그 class : 그룹으로 묶어서 스타일을 지정 -->
+                <p>(그냥 닫기 버튼입니다.)</p>
+                <!-- 하나의 문단을 만들때 쓰인다 -->
+            </div>
+        </div>
+    </section>
+    <section id="copyright">
+    <!-- html 문서에 포함된 독립적인 섹션을 정의할 때 사용 -->
+        <div class="logo_img">
+        <!-- div : 레이아웃을 만들때 주로 사용, class : 그룹으로 묶어서 스타일을 지정 -->
+            <img src="img/logo.png" alt="weniv">
+            <!-- img src="img/logo.png" : 이미지 경로 지정, alt="weniv" : 대체할 문자열 지정 -->
+        </div>
+        <p>
+            ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
+            <!-- br : 개행 -->
+            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        </p>
+    </section>
+    <!-- section 태그 종료 -->
+    <script type="text/javascript" src="js/10000hours.js"></script>
+    <!-- 자바스크립트와 같은 클라이언트 사이드 스크립트 정의 src : 소스 파일 위치 -->
+</body>
+<!-- body 태그 종료 -->
+</html>
+<!-- html 종료 -->
